@@ -8,7 +8,7 @@ setup(
     name='repp',
     description='Manage repositories.',
     author='Ashely Gillman',
-    version='1.0.0',
+    version='1.0.1',
     license='MIT',
     py_modules=['repp'],
     install_requires=['click'],
@@ -29,5 +29,5 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Topic :: Software Development :: Version Control :: Git',
     ],
-    keywords = 'git repository manager',
+    keywords='git repository manager',
 )
