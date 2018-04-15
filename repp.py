@@ -9,9 +9,10 @@ import click
 CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
 
 DEFAULT_ROOT = path.expanduser('~/dev')  # TODO, be able to change
+FOLDER_RE_STR = '[\w\.@\:\-~]+'
 GITHUB_RE = re.compile(
     '(?P<protocol>(?:(?:(?:http|https)://|git@))?)(github.com)(:|/)'
-    '(?P<owner>\w+)(/)(?P<repo>\w+)(.git)?')
+    f'(?P<owner>{FOLDER_RE_STR})(/)(?P<repo>{FOLDER_RE_STR})(.git)?')
 
 root = DEFAULT_ROOT
 
